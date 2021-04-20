@@ -1,0 +1,18 @@
+{
+  "name": "angular-gmaps",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.11",
+    "@angular/core": "^8.2.11"
+  },
+  "devDependencies": {
+    "@types/googlemaps": "^3.38.0"
+  },
+  "main": "src/public_api.ts",
+  "dependencies": {
+    "@angular/common": "^10.0.4",
+    "@angular/core": "^10.0.4",
+    "rxjs": "^6.6.3",
+    "tslib": "^2.0.0"
+  }
+}
