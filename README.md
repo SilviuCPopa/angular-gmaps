@@ -36,7 +36,7 @@ Import angular gmaps module into your app's module:
 			 </ag-info-window>
 		 </ag-map-marker>
 		 <ag-draw-direction [start]="startLocation"
-						    [end]="endLocation">
+				    [end]="endLocation">
 	     </ag-draw-direction>
 	 </ag-markers-list>
  </ag-drapp-maps>
