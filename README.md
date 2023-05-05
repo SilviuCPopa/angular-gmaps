@@ -1,24 +1,64 @@
-# DrappMaps
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.11.
+# Angular Gmaps
 
-## Code scaffolding
+Angular Gmaps is a library that make google maps integration easier with angular
 
-Run `ng generate component component-name --project drapp-maps` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project drapp-maps`.
-> Note: Don't forget to add `--project drapp-maps` or else it will be added to the default project in your `angular.json` file. 
+## Getting started
 
-## Build
+Import angular gmaps module into your app's module:
 
-Run `ng build drapp-maps` to build the project. The build artifacts will be stored in the `dist/` directory.
+    import {NgModule} from '@angular/core';
+    import {DrappMapsModule, AgGeocodeApiService} from 'angular-gmaps';
+    @NgModule({
+     imports: [DrappMapsModule.forRoot({
+		     apiKey: '<MAPS_API_KEY>',
+		     apiUrl: '<MAPS_API_URL>'
+	     )],
+     providers: [
+		     // You can provide here a different service for google autocomplete locations
+		     { provide: FORM_GEOCODE_AUTOCOMPLETE, useClass: AgGeocodeApiService }
+	     ]
+     })
+     export class AppModule{}
+ 
+ Finally connect the component in  template: 
+```
+ <ag-drapp-maps #agMap [darkMode]="true" [center]="{ lat: 0.00, lng: 0.00 }">
+	 <ag-markers-list>
+		 <ag-map-marker #ag-marker
+				 [showInfo]="true"
+				 [active]="true"
+				 [animation]="0"
+				 [label]="{ text: 'D', color: 'white' }"
+				 [position]="{ lat: 3.00, lng: 3.00 }">
+			 <ag-info-window [title]="'window title'" [content]="'hellow world'">
+				 <p>more content</p>
+			 </ag-info-window>
+		 </ag-map-marker>
+		 <ag-draw-direction [start]="startLocation"
+						    [end]="endLocation">
+	     </ag-draw-direction>
+	 </ag-markers-list>
+ </ag-drapp-maps>
+ ```
+ 
 
-## Publishing
+## Development
 
-After building your library with `ng build drapp-maps`, go to the dist folder `cd dist/drapp-maps` and run `npm publish`.
+### Prepare your environment
 
-## Running unit tests
+Install local dev dependencies: `npm install` while current directory is this repo.
+ 
+### Development server
 
-Run `ng test drapp-maps` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm start` to start a development server on a port 4200.
 
-## Further help
+Open `http//:localhost:4200` on your browser.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Tests
+
+Run `npm test` to run tests once or `npm run test:watch` to continually run tests.
+
+## License
+
+MIT
