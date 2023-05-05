@@ -20,8 +20,8 @@ Import angular gmaps module into your app's module:
 	     ]
      })
      export class AppModule{}
- 
- Finally connect the component in  template: 
+
+ Finally connect the component in  template:
 ```
  <ag-drapp-maps #agMap [darkMode]="true" [center]="{ lat: 0.00, lng: 0.00 }">
 	 <ag-markers-list>
@@ -41,12 +41,12 @@ Import angular gmaps module into your app's module:
 	 </ag-markers-list>
  </ag-drapp-maps>
  ```
- 
+
  ## Documentation
 #### API reference for Angular Gmaps
     import { DrappMapsModule } from 'angular-gmaps';
-#### AgMapsComponent 
-Component responsible for managing the map 
+#### AgMapsComponent
+Component responsible for managing the map
 
 Selector: `ag-drapp-maps`
 
@@ -55,7 +55,7 @@ Selector: `ag-drapp-maps`
 | Name | Description |
 |------|-------------|
 | @Input()
-  darkMode: boolean| If is set to true the maps will have the dark mode styles applied. Default is **false** | 
+  darkMode: boolean| If is set to true the maps will have the dark mode styles applied. Default is **false** |
 | @Input()
   center: MapCoordinates| Map coordinates object "{ lat: 0.00, lng: 0.00 }" |
 | @Input()
@@ -69,7 +69,7 @@ Selector: `ag-drapp-maps`
 | @Input()
   mapTypeId: MapTypeEnum | Map types, choose one of (**'roadmap', 'hybrid', 'satellite', 'terrain'**). Default is **'roadmap'** |
 
-#### AgMapMarkerComponent 
+#### AgMapMarkerComponent
 Component responsible for managing the map markers
 
 Selector: `ag-map-marker`
@@ -79,7 +79,7 @@ Selector: `ag-map-marker`
 | Name | Description |
 |------|-------------|
 | @Input()
-  draggable: boolean| Ability to move the marker on the map. Default is **false** | 
+  draggable: boolean| Ability to move the marker on the map. Default is **false** |
 | @Input()
   position: MapCoordinates| Map coordinates object "{ lat: 0.00, lng: 0.00 }" |
 | @Input()
@@ -93,8 +93,8 @@ Selector: `ag-map-marker`
 | @Input()
   showInfo: boolean| Enable or disable info tooltip when clicking the marker |
 
-#### AgDrawDirectionComponent  
-Component responsible for managing the directions between two points on the map 
+#### AgDrawDirectionComponent
+Component responsible for managing the directions between two points on the map
 
 Selector: `ag-draw-direction`
 
@@ -103,13 +103,13 @@ Selector: `ag-draw-direction`
 | Name | Description |
 |------|-------------|
 | @Input()
-  start: MapCoordinates| Map coordinates object "{ lat: 0.00, lng: 0.00 }" | 
+  start: MapCoordinates| Map coordinates object "{ lat: 0.00, lng: 0.00 }" |
 | @Input()
   end: MapCoordinates| Map coordinates object "{ lat: 0.00, lng: 0.00 }" |
 | @Input()
   waypoints: AgWayPoints[] | Array of coordinates for stop points **{ location: AgCoordinates, stopover: boolean }**|
 
-#### AgInfoWindowComponent 
+#### AgInfoWindowComponent
 Component responsible for managing the tooltip for markers on the map
 
 Selector: `ag-info-window`
@@ -119,7 +119,7 @@ Selector: `ag-info-window`
 | Name | Description |
 |------|-------------|
 | @Input()
-  title: string| Tooltip title | 
+  title: string| Tooltip title |
 | @Input()
   content: string| Tooltip content|
 | @ViewChild()
@@ -130,7 +130,7 @@ Selector: `ag-info-window`
 ### Prepare your environment
 
 Install local dev dependencies: `npm install` while current directory is this repo.
- 
+
 ### Development server
 
 Run `npm start` to start a development server on a port 4200.
