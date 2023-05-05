@@ -6,8 +6,7 @@
     "types": ["google.maps"],
     "typeRoots": [
       "node_modules/@types",
-      "node_modules/@types/google.maps",
-      "./index.d.ts"
+      "node_modules/@types/google.maps"
     ],
     "paths": {
       "angular-gmaps": [

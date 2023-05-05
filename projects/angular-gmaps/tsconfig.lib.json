@@ -9,8 +9,7 @@
     "types": ["google.maps"],
     "typeRoots": [
       "node_modules/@types",
-      "node_modules/@types/googlemaps",
-      "./index.d.ts"
+      "node_modules/@types/googlemaps"
     ],
   },
   "exclude": [
