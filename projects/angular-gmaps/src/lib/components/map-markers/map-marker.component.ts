@@ -4,8 +4,9 @@ import { MapMarkerService } from '../../services/map-marker.service';
 import { MapCoordinates, MarkerLabel, MarkerIcon, MarkerPath } from '../../interfaces/map-types.interface';
 
 @Component({
-  selector: 'ag-map-marker',
-  template: ''
+    selector: 'ag-map-marker',
+    template: '',
+    standalone: false
 })
 export class AgMapMarkerComponent implements OnInit, OnChanges, OnDestroy {
 

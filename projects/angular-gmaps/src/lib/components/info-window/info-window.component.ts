@@ -2,9 +2,10 @@ import { Component, Input, ViewChild, ElementRef, AfterViewInit } from '@angular
 import { AgInfoWindowApiService } from '../../services/info-window.service';
 
 @Component({
-  selector: 'ag-info-window',
-  templateUrl: './info-window.component.html',
-  styleUrls: ['./info-window.component.scss']
+    selector: 'ag-info-window',
+    templateUrl: './info-window.component.html',
+    styleUrls: ['./info-window.component.scss'],
+    standalone: false
 })
 export class AgInfoWindowComponent implements AfterViewInit {
 

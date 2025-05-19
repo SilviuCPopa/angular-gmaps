@@ -6,12 +6,13 @@ import { AgMapMarkerListComponent } from './components/map-markers/map-marker-li
 import { AgDrawDirectionComponent } from './components/draw-direction/draw-direction.component';
 
 @Component({
-  selector: 'ag-drapp-maps',
-  templateUrl: './angular-gmaps.component.html',
-  styles: [` #ag-map {
+    selector: 'ag-drapp-maps',
+    templateUrl: './angular-gmaps.component.html',
+    styles: [` #ag-map {
     width: 100%;
     height: 100%;
-  }`]
+  }`],
+    standalone: false
 })
 export class AgMapsComponent implements OnInit {
 

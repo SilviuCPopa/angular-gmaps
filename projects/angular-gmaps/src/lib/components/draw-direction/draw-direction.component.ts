@@ -5,7 +5,8 @@ import { AgCoordinates, AgWayPoints } from '../../interfaces/map-types.interface
 
 @Component({
     selector: 'ag-draw-direction',
-    template: ''
+    template: '',
+    standalone: false
 })
 export class AgDrawDirectionComponent implements OnChanges, OnDestroy {
 
