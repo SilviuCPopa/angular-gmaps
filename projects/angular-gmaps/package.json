@@ -2,8 +2,8 @@
   "name": "angular-gmaps",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^16.0.0",
-    "@angular/core": "^16.0.0"
+    "@angular/common": "^20.3.15",
+    "@angular/core": "^20.3.15"
   },
   "dependencies": {
     "tslib": "^2.3.0"
