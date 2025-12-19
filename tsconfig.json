@@ -3,7 +3,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "strictNullChecks": false,
-    "types": ["google.maps"],
+    "types": [
+      "google.maps"
+    ],
     "typeRoots": [
       "node_modules/@types",
       "node_modules/@types/google.maps"
@@ -25,7 +27,7 @@
     "sourceMap": true,
     "declaration": false,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
