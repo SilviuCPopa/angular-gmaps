@@ -7,10 +7,6 @@
     "declarationMap": true,
     "inlineSources": true,
     "types": ["google.maps"],
-    "typeRoots": [
-      "node_modules/@types",
-      "node_modules/@types/googlemaps"
-    ],
   },
   "exclude": [
     "**/*.spec.ts"
